@@ -1,0 +1,302 @@
+.experience {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f0f 100%);
+}
+
+.experience-timeline {
+  position: relative;
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #667eea, #764ba2);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 45%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 55%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 4px solid #0a0a0a;
+  z-index: 2;
+}
+
+.timeline-item.left::before {
+  right: -60px;
+}
+
+.timeline-item.right::before {
+  left: -60px;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.meta-item svg {
+  color: #667eea;
+}
+
+.company-info {
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.company-link {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-link:hover {
+  color: #764ba2;
+}
+
+.experience-description {
+  color: #d0d0d0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.achievements {
+  margin-bottom: 1.5rem;
+}
+
+.achievements h5 {
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements li {
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.technologies-used {
+  margin-bottom: 0;
+}
+
+.technologies-used h5 {
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.experience-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-content h3 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .experience-timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+  }
+
+  .timeline-item::before {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .experience-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-meta {
+    gap: 1rem;
+  }
+
+  .meta-item {
+    font-size: 0.85rem;
+  }
+
+  .experience-cta {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .cta-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-item::before {
+    left: 5px !important;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
+  }
+
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  .experience-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .achievements li {
+    font-size: 0.85rem;
+  }
+
+  .experience-cta {
+    padding: 1.5rem;
+  }
+
+  .cta-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .cta-content p {
+    font-size: 0.95rem;
+  }
+} 

@@ -53,7 +53,7 @@ const Contact = () => {
       name: "GitHub",
       url: "https://github.com/prakhar8922",
       icon: FiGithub,
-      color: "#333",
+      color: "#fff", // changed from #333 to #fff for better visibility
     },
     {
       name: "LinkedIn",

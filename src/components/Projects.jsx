@@ -14,13 +14,24 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 0,
+      title: "Personal Portfolio Website",
+      description:
+        "Developed and deployed a fully responsive portfolio site using React.js, showcasing 6+ projects, experience timeline, and skills with engaging animations. Integrated SEO, social links, and a contact form, resulting in 40% faster load time and improved discoverability on search engines.",
+      image: "/project-portfolio.jpg",
+      technologies: ["React.js", "HTML5", "CSS3", "JavaScript"],
+      github: "https://github.com/prakhar8922/Personal-website",
+      live: "https://personal-website-eosin-three-85.vercel.app/",
+      category: "fullstack",
+    },
+    {
       id: 1,
       title: "Alan AI News Application",
       description:
         "Designed a front-end interface with React.js and JavaScript, integrating Alan AI for voice navigation with 95% command accuracy. Created a lightweight back-end service with Python to fetch multi-source news data, improving content delivery speed by 90%.",
       image: "/project1.jpg",
       technologies: ["React.js", "JavaScript", "Python", "Alan AI", "NLP"],
-      github: "https://github.com/prakhar8922",
+      github: "https://github.com/prakhar8922/ai_news_application",
       live: "#",
       category: "ai",
     },
@@ -31,7 +42,7 @@ const Projects = () => {
         "Built a responsive front-end using HTML, CSS, and Bootstrap, boosting user engagement by 25% across devices. Engineered a full-stack solution with Flask and SQLite, optimizing database queries for 95% data consistency.",
       image: "/project2.jpg",
       technologies: ["HTML", "CSS", "Bootstrap", "Flask", "SQLite"],
-      github: "https://github.com/prakhar8922",
+      github: "https://github.com/prakhar8922/Social-Blog-project",
       live: "#",
       category: "fullstack",
     },
@@ -163,7 +174,7 @@ const Projects = () => {
             >
               <div className="project-image">
                 <div className="image-placeholder">
-                  <span>{project.title}</span>
+                  <span className="project-title-overlay">{project.title}</span>
                 </div>
                 <div className="project-overlay">
                   <div className="project-links">

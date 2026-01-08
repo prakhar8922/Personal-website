@@ -102,7 +102,7 @@ const Hero = () => {
                 Get In Touch
               </a>
               <a
-                href="/Prakhar Goel Resume.pdf"
+                href="/Prakhar_Goel_Resume.pdf"
                 className="btn btn-secondary"
                 download
               >
